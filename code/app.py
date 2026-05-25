@@ -2,10 +2,6 @@ import gradio as gr
 
 from rag_pipeline import ask_question
 
-
-# =========================
-# CREATE GRADIO INTERFACE
-# =========================
 iface = gr.Interface(
     fn=ask_question,
 
@@ -19,12 +15,7 @@ iface = gr.Interface(
     ),
 
     title="Sanskrit RAG System",
-
     description="Ask questions from Sanskrit documents using Retrieval-Augmented Generation (RAG)."
 )
 
-
-# =========================
-# LAUNCH APP
-# =========================
 iface.launch()
